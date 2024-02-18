@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'header.html' %}<br><br><br><br><br><br><br>
+<div class="wrapper"style="align-items: center; border: 2px solid #16a085; padding: 10px;"style="width:min">
+
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal text-body-emphasis font-weight-bold">Medicinal Plant Recognition System</h1>
+    <p class="fs-5 text-body-secondary font-weight-normal"><big>Quickly build an effective pricing table for your
+        potential customers with this Bootstrap example. <br>It’s built with default Bootstrap components and utilities
+        with little customization.</big></p>
+  </div>
+
+
+  <img class="container my-2" src="static/images/cloud-upload.png" id="dispimg"
+    style="display: flex; justify-content: center; align-items: center;height: 300px; width: 300px; border: 2px dashed gray;">
+
+
+
+  <div class="container my-2" style="display: flex; justify-content: center; align-items: center;">
+    <form action="/submit" method="post" enctype="multipart/form-data">
+      <label for="fileupload"
+        style="display: block; width: 130px; background: #e3362c; color: #fff; padding: 12px; margin: 10px; border-radius: 5px; cursor:pointer; text-align: center;"><strong>Upload Image</strong></label>
+
+      <input type="file" name="my_image" id="fileupload" accept="image/jpeg, image/jpg, image/png" style="display: none;">
+
+      <div class="container" style="display: flex; justify-content: center; align-items: center;">
+        <button class="btn btn-success" style="width: 100px;"><strong>Submit</strong></button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+  <div class="contianer mt-0 mx-auto" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+      <hr>
+      <li class="list-group-item"><strong>Plant Name :{{result}}</strong></li>
+      <li class="list-group-item"><strong>Confidence :{{accuracy}}</strong></li>
+      <hr>
+    </ul>
+
+<br><br>
+  </div>
+</div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!--E mail Function Script-->
+  <script>
+    function showMail(a, b) {
+      document.getElementById(a).innerHTML = b;
+    }
+
+    function hideMail(a) {
+      document.getElementById(a).innerHTML = "";
+    }
+
+    // JS code for uploading pic...
+
+    let LogoPic = document.getElementById("dispimg");
+    let InputPic = document.getElementById("fileupload");
+
+    InputPic.onchange = function () {
+      LogoPic.src = URL.createObjectURL(InputPic.files[0]); //creating the url of the input file and then updating it
+    }
+  </script>
+
+</body>
+
+</html>

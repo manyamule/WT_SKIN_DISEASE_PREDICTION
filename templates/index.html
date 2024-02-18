@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medcare | Hospital Website</title>
+    <!-- Page Icon -->
+    <link
+      rel="shortcut icon"
+      href="static/images/heartbeat-solid.svg"
+      type="image/x-icon"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Custom Css File Link -->
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <style>
+  .about .row .content{
+    flex: 1 1 45rem;
+}
+.about .row .content h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+.about .row .content p{
+    color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+    </style>
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <section class="home" id="home">
+      <div class="image">
+        <img src="static/images/home-img.svg" alt="home-img.svg" />
+      </div>
+      <div class="content">
+        <h3>stay safe, stay healthy</h3>
+        <p>
+          At Medcare, we believe in the power of technology to transform the way we approach skin health.
+        </p><p>Welcome to a platform where innovation meets compassion, and your well-being takes center stage.
+
+        </p> 
+        
+        <a href="/login" class="btn"
+          >Get Started <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- icons section starts  -->
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3>14+</h3>
+        <p>doctors at work</p>
+      </div>
+      <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3>100+</h3>
+        <p>satisfied patients</p>
+      </div>
+      
+      <div class="icons">
+        <i class="fas fa-hospital"></i>
+        <h3>80+</h3>
+        <p>available hospitals</p>
+      </div>
+    </section>
+
+    <!-- About section Starts  -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+      <div class="row">
+        <div class="image">
+          <img src="static/images/about-img.svg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Your Health, Our Priority:</h3>
+          <p>
+            Welcome to Medcare, where we're dedicated to revolutionizing healthcare accessibility and empowering individuals 
+            to take control of their skin health. At Medcare, we believe that technology can play a transformative role in 
+            making healthcare more personalized, efficient, and user-friendly.
+          </p>
+            <h3> Mission:</h3>
+            <p>
+            Empower individuals to proactively manage their skin health through cutting-edge technology, 
+            accurate information, and seamless access to healthcare professionals.
+          </p>
+           <h3>Who We Are:</h3> 
+           <p>
+            Medcare is a team of passionate individuals from diverse backgrounds, including healthcare, technology, 
+            and design. United by a common goal, we aim to bridge the gap between technology and healthcare to make skin disease detection and doctor appointments more accessible and 
+            convenient for everyone.
+           </p>
+        </div>
+      </div>
+    </section>
+    <!-- About section End  -->
+<!-- Service section Starts  -->
+    <section class="services" id="services">
+      <h1 class="heading">our <span>services</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-notes-medical"></i>
+          <h3>Advanced Skin Disease Detection</h3>
+          <p>
+            Our platform utilizes state-of-the-art machine learning models to accurately analyze uploaded photos 
+            and provide instant insights into skin conditions.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-ambulance"></i>
+          <h3>Comprehensive Information</h3>
+          <p>
+            We go beyond simple diagnoses. Medcare offers in-depth information about various skin diseases, 
+            including causes, symptoms, treatments, and preventive measures, sourced from reputable medical databases.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-user-md"></i>
+          <h3>Personalized Doctor Recommendations</h3>
+          <p>
+            Discover the right healthcare professional for your needs. Medcare suggests nearby doctors specializing in the identified skin condition,
+             ensuring you get the care you deserve.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-pills"></i>
+          <h3>Effortless Appointment Booking:</h3>
+          <p>
+            Seamlessly schedule appointments with recommended doctors directly through our platform.
+             We prioritize simplicity and convenience to make your healthcare journey smooth.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Service section End  -->
+
+    <!-- Book section Starts  -->
+    <section class="book" id="book">
+      <h1 class="heading"><span>book</span> now</h1>
+      <div class="row">
+        <div class="image">
+          <img src="static/imagesbook-img.svg" alt="" />
+        </div>
+        <form action="/login">
+          <h3>book appointment</h3>
+          <input type="text" placeholder="your name" class="box" />
+          <input type="number" placeholder="your number" class="box" />
+          <input type="email" placeholder="your email" class="box" />
+          <input type="date" class="box" />
+          <input type="submit" value="book now" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- Book section End  -->
+
+    <!-- Review section Starts  
+    <section class="review" id="review">
+      <h1 class="heading">client's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="static/images/pic-1.png" alt="" />
+          <h3>Jazmin Archer</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text">
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam
+            Sapiente Nihil Aperiam? Repellat Sequi Nisi Aliquid Perspiciatis
+            Libero Nobis Rem Numquam Nesciunt Alias Sapiente Minus Voluptatem,
+            Reiciendis Consequuntur Optio Dolorem!
+          </p>
+        </div>
+        <div class="box">
+          <img src="static/images/pic-2.png" alt="" />
+          <h3>Jazmin Archer</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text">
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam
+            Sapiente Nihil Aperiam? Repellat Sequi Nisi Aliquid Perspiciatis
+            Libero Nobis Rem Numquam Nesciunt Alias Sapiente Minus Voluptatem,
+            Reiciendis Consequuntur Optio Dolorem!
+          </p>
+        </div>
+        <div class="box">
+          <img src="static/images//pic-3.png" alt="" />
+          <h3>Abdiel Galloway</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text">
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam
+            Sapiente Nihil Aperiam? Repellat Sequi Nisi Aliquid Perspiciatis
+            Libero Nobis Rem Numquam Nesciunt Alias Sapiente Minus Voluptatem,
+            Reiciendis Consequuntur Optio Dolorem!
+          </p>
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- Review section End  -->
+ 
+
+    <!-- Footer section Starts  -->
+<!-- Doctors section Starts  -->
+<section class="doctors" id="doctors">
+  <h1 class="heading">our <span>Team</span></h1>
+  <div class="box-container">
+    <div class="box">
+      <img src="static/images/b.jpg" alt="" />
+      <h3> Piyush Pise </h3>
+      <span>GOAT Sportsman </span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="static/images/doc-2.jpg" alt="" />
+      <h3> Sumit Ubhare</h3>
+      <span>Team leader</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="static/images/doc-3.jpg" alt="" />
+      <h3>Om Lohade</h3>
+      <span>Autocat Expert</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="static/images/doc-4.jpg" alt="" />
+      <h3>Ajinkya Matre</h3>
+      <span>Expert Actor</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="static/images/doc-5.jpg" alt="" />
+      <h3>Manoj Mule</h3>
+      <span>Expertise in IOT</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="static/images/doc-6.jpg" alt="" />
+      <h3>Suraj Samgir</h3>
+      <span>Expert Advisor</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Doctors section Ends  -->
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

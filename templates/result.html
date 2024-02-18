@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction Results</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <style>
+     
+
+        h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.5;
+
+        }
+        p{
+            color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+
+        }
+        pre{
+            color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+        }
+    </style>
+
+</head>
+<body>
+    {% include 'header.html' %}
+<br><br><br><br>
+      <section class="about" id="about">
+        <h1 class="heading"><span>Image Prediction </span> Result</h1>
+        
+        
+            <center >
+            <img src="{{ img_path }}"style="display: flex; justify-content: center; align-items: center;height: 240px; width: 240px; border: 2px solid #16a085;" alt="Uploaded Image" style="max-width: 150px;">
+            <p><strong>Prediction:</strong><h3> {{ prediction}}</h3></p>
+            <p><strong>Confidance:</strong> {{ accuracy }}%</p>
+        </center>        
+          <div class="content">
+            <h3>Overview</h3>
+           <p>{{info[0][2]}}
+        </p>
+           <h3>Causes</h3> 
+         <p>{{info[0][3]}}
+         </p>
+           <h3>Symptoms</h3> 
+           <pre>{{info[0][4]}}</pre>
+            <h3>Treatments</h3>
+       <pre>{{info[0][5]}}</pre>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

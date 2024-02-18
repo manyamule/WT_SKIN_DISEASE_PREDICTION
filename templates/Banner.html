@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Health - Banner</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <div class="banner">
+      <div class="banner-content">
+        <h1>Welcome {{name}} !</h1><br><br>
+        <h1>Your Skin Health, Our Priority</h1>
+        <p>
+          Get expert skin disease detection and book appointments with
+          specialized doctors.
+        </p>
+        <div class="cta-buttons">
+          <a href="/index" class="detect-button">Detect Skin Disease</a>
+          <a href="" class="book-button">Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

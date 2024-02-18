@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+/*  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYWZDCP0FtjmoX0Tl50ilHHNOWqjwvgvJkUg&usqp=CAU");*/
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  color: #390202;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  height: 300px;
+  background-color: rgb(244, 243, 243);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #16a085;
+  text-align: center;
+  padding: 20px;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.detect-button,
+.book-button {
+  display: inline-block;
+  background-color: #16a085;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.detect-button:hover,
+.book-button:hover {
+  background-color: #85cbbd;
+}
