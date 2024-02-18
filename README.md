@@ -1,4 +1,4 @@
-LinkedIn Project Description:
+
 
 Title: Automated Multiclass Skin Disease Diagnosis using Deep Learning
 
@@ -32,8 +32,4 @@ Description:
 
 13. **Save Model:** Secured the trained model to a specified directory for future use or deployment.
 
-🚀 Check out the code on GitHub: [Skin Disease Detection GitHub Repository](https://github.com/Skin-Disease-Detection/WT-PROJECT)
 
-Join me on this journey of leveraging deep learning for automated skin disease diagnosis! Let's make an impact together. 💻🔍🤖 #DeepLearning #SkinDiseaseDiagnosis #TensorFlow #MachineLearning #GitHubProject #WebApplication #Flask #AIinHealthcare
-
-Feel free to customize the description based on your preferences and LinkedIn style. Good luck with your project!
